@@ -1,0 +1,10 @@
+name: Sonatype Workflow
+on: push
+jobs:
+  sonatype-cli:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Sonatype CLI
+        uses: sonatype/actions/setup-iq-cli@v1
+        with:
+          iq-cli-version: 1.179.0-01
