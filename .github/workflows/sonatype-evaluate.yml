@@ -18,7 +18,7 @@ jobs:
           username: admin
           password: fishbrain
           application-id: juice-shop-gh
-          scan-targets: "**/*.*, !**/*.jpg"
+          scan-targets: "**/*.*"
       # Print out the results
       - name: Log evaluate action output
         run: echo "${{ steps.evaluate.outputs.scan-id }} ${{ steps.evaluate.outputs.report-url }}"
